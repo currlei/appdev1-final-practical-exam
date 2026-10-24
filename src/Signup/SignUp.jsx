@@ -1,4 +1,5 @@
 import styles from './SignUp.module.css'
+import { Input } from '@/components/ui/input'
 import blossomImage from '../assets/blossom-flower.svg'
 import googleLogo from '../assets/icons-google-logo.svg'
 import appleLogo from '../assets/icons-apple-logo.svg'
@@ -12,15 +13,15 @@ function SignUp() {
           <form className={styles.form}>
             <div className={styles.field}>
               <label className={styles.label} htmlFor="name">Name</label>
-              <input className={styles.input} id="name" name="name" type="text" placeholder="Enter your name" />
+              <Input className={styles.input} id="name" name="name" type="text" placeholder="Enter your name" />
             </div>
             <div className={styles.field}>
               <label className={styles.label} htmlFor="email">Email address</label>
-              <input className={styles.input} id="email" name="email" type="email" placeholder="Enter your email" />
+              <Input className={styles.input} id="email" name="email" type="email" placeholder="Enter your email" />
             </div>
             <div className={styles.field}>
               <label className={styles.label} htmlFor="password">Password</label>
-              <input className={styles.input} id="password" name="password" type="password" placeholder="Name" />
+              <Input className={styles.input} id="password" name="password" type="password" placeholder="Name" />
             </div>
             <label className={styles.agreement}>
               <input className={styles.checkbox} type="checkbox" name="agreement" />

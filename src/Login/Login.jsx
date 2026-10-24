@@ -1,4 +1,5 @@
 import styles from './Login.module.css'
+import { Input } from '@/components/ui/input'
 import blossomImage from '../assets/blossom-flower.svg'
 import googleLogo from '../assets/icons-google-logo.svg'
 import appleLogo from '../assets/icons-apple-logo.svg'
@@ -13,14 +14,14 @@ function Login() {
           <form className={styles.form}>
             <div className={styles.field}>
               <label className={styles.label} htmlFor="email">Email address</label>
-              <input className={styles.input} id="email" name="email" type="email" placeholder="Enter your email" />
+              <Input className={styles.input} id="email" name="email" type="email" placeholder="Enter your email" />
             </div>
             <div className={styles.field}>
               <div className={styles.passwordLabelRow}>
                 <label className={styles.label} htmlFor="password">Password</label>
                 <a className={styles.forgotPassword} href="#forgot-password">forgot password?</a>
               </div>
-              <input className={styles.input} id="password" name="password" type="password" placeholder="Enter your password" />
+              <Input className={styles.input} id="password" name="password" type="password" placeholder="Enter your password" />
             </div>
             <label className={styles.agreement}>
               <input className={styles.checkbox} type="checkbox" name="remember" />
