@@ -8,7 +8,8 @@ function Login() {
     <main className={styles.page}>
       <section className={styles.left} aria-label="Sign up form area">
         <div className={styles.signupContent}>
-          <h1 className={styles.title}>Get Started Now</h1>
+          <h1 className={styles.title}>Welcome back!</h1>
+          <p className={styles.subtitle}>Enter your Credentials to access your account</p>
           <form className={styles.form}>
             <div className={styles.field}>
               <label className={styles.label} htmlFor="name">Name</label>

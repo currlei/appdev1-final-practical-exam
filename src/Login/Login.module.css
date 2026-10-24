@@ -27,12 +27,26 @@
 .title {
   width: min(100%, 25.25rem);
   margin: 0;
-  color: #111;
-  font-size: clamp(1.75rem, 2.1vw, 2rem);
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  margin-bottom: clamp(40px, 6.5vh, 68px);
+  color: #000;
+  font-family: Poppins, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  width: 372px;
+  max-width: 100%;
+  height: 26.55px;
+  margin: 0 0 clamp(20px, 3.85vh, 40px);
+  color: #000;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .form {
