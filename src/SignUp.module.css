@@ -11,10 +11,12 @@
 }
 
 .left {
-  display: flex;
+  display: inline-flex;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
-  padding: 20.3vh 0 2rem 11.4vw;
+  gap: 10px;
+  height: 638px;
+  padding: 20.3vh 0 64px 11.4vw;
 }
 
 .title {
@@ -25,6 +27,93 @@
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.02em;
+  margin-bottom: 68px;
+}
+
+.form {
+  width: min(100%, 25.25rem);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 25px;
+}
+
+.label {
+  color: #111;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.input {
+  width: 100%;
+  height: 33px;
+  padding: 0 9px;
+  border: 1px solid #d7d7d7;
+  border-radius: 11px;
+  background: #fff;
+  color: #111;
+  font: inherit;
+  font-size: 11px;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #d1d1d1;
+  opacity: 1;
+}
+
+.input:focus {
+  border-color: #3b5f24;
+  box-shadow: 0 0 0 2px rgb(59 95 36 / 12%);
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 1px;
+  color: #111;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.checkbox {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  accent-color: #3b5f24;
+}
+
+.agreement a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.submit {
+  width: 100%;
+  height: 33px;
+  margin-top: 32px;
+  border: 0;
+  border-radius: 10px;
+  background: #3b5f24;
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #304e1d;
+}
+
+.submit:focus-visible {
+  outline: 2px solid #203914;
+  outline-offset: 2px;
 }
 
 .right {
@@ -39,6 +128,33 @@
   width: min(100%, 828px);
   max-height: 100vh;
   object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .title {
+    margin-bottom: 3rem;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .right {
+    min-height: 55vh;
+  }
+
+  .image {
+    max-height: 55vh;
+  }
 }
 
 
