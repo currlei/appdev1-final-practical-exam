@@ -1,0 +1,47 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.left,
+.right {
+  min-width: 0;
+}
+
+.left {
+  /* Reserved for the sign up form. */
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: min(100%, 828px);
+  max-height: 100vh;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    min-height: 100vh;
+  }
+
+  .image {
+    max-height: 100vh;
+  }
+}
