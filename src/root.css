@@ -1,0 +1,120 @@
+:root {
+  /* Font families and type scale */
+  --font-family-base: system-ui, sans-serif;
+  --font-family-brand: Poppins, sans-serif;
+  --font-size-checkbox: 9px;
+  --font-size-micro: 10px;
+  --font-size-placeholder: 11px;
+  --font-size-small: 12px;
+  --font-size-body: 14px;
+  --font-size-subtitle: 16px;
+  --font-size-title: 32px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-login-subtitle: 520;
+  --font-weight-login-title: 550;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --line-height-normal: normal;
+  --line-height-tight: 1.1;
+  --line-height-body: 1.2;
+  --line-height-single: 1;
+  --letter-spacing-title: -0.02em;
+  --viewport-height: 100vh;
+
+  /* Colors */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-text: #111;
+  --color-border: #d7d7d7;
+  --color-placeholder-signup: #d1d1d1;
+  --color-muted: #d9d9d9;
+  --color-brand: #3b5f24;
+  --color-brand-login: #3a5b22;
+  --color-brand-hover: #304e1d;
+  --color-focus: #203914;
+  --color-action-secondary: #0c2a92;
+  --color-action-link: #0f3dde;
+  --color-action-signup: #0645ff;
+  --color-divider-signup: #ededed;
+  --color-divider-login: #f5f5f5;
+  --color-focus-shadow: rgb(59 95 36 / 12%);
+
+  /* Shared dimensions */
+  --page-max-width: 1536px;
+  --page-max-height: 1042px;
+  --content-width: 25.25rem;
+  --control-height: 33px;
+  --input-border-width: 1px;
+  --button-radius: 10px;
+  --input-radius: 11px;
+  --border-radius-small: 2px;
+  --input-padding-inline: 9px;
+  --focus-outline-width: 2px;
+  --provider-icon-size: 22px;
+  --signup-title-size: clamp(1.75rem, 2.1vw, 2rem);
+  --signup-image-width: 828px;
+  --page-left-inset: 11.4vw;
+  --password-row-height: 17px;
+  --social-button-width: 50%;
+  --social-button-padding-inline: 8px;
+  --social-button-gap: 10px;
+  --signup-divider-line-height: 1px;
+  --login-divider-line-height: 2px;
+  --checkbox-check-width: 3px;
+  --checkbox-check-height: 5px;
+  --outline-offset: 2px;
+  --checkbox-check-offset-y: -1px;
+
+  /* Shared spacing */
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-5: 5px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-22: 22px;
+  --space-23: 23px;
+  --space-24: 24px;
+  --space-25: 25px;
+  --space-28: 28px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-44: 44px;
+  --space-52: 52px;
+  --space-54: 54px;
+  --space-61: 61px;
+  --space-64: 64px;
+  --space-68: 68px;
+  --space-86: 86px;
+
+  /* Page layout values */
+  --signup-left-height: 638px;
+  --login-left-height: 583px;
+  --signup-left-top-padding: min(20.3vh, 211px);
+  --login-left-top-padding: min(16.1vh, 168px);
+  --signup-title-to-form: clamp(var(--space-40), 6.5vh, var(--space-68));
+  --login-subtitle-to-form: clamp(var(--space-44), 5.85vh, var(--space-61));
+  --field-spacing: clamp(var(--space-16), 2.4vh, var(--space-25));
+  --signup-submit-spacing: clamp(var(--space-20), 3.1vh, var(--space-32));
+  --login-submit-spacing: clamp(var(--space-16), 2.1vh, var(--space-22));
+  --signup-divider-spacing: clamp(var(--space-24), 5.2vh, var(--space-54));
+  --login-divider-spacing: clamp(var(--space-20), 3.1vh, var(--space-32));
+  --signup-social-spacing: clamp(var(--space-32), 6.1vh, var(--space-64));
+  --login-social-spacing: clamp(var(--space-52), 8.25vh, var(--space-86));
+  --signup-footer-spacing: clamp(var(--space-16), 2.3vh, var(--space-24));
+  --login-footer-spacing: clamp(var(--space-20), 2.7vh, var(--space-28));
+  --login-subtitle-width: 372px;
+  --login-subtitle-height: 26.55px;
+  --login-forgot-width: 83px;
+  --login-forgot-height: 16.594px;
+  --login-button-width: 404px;
+  --divider-width: 400px;
+  --login-footer-width: 229px;
+  --login-footer-height: 23.231px;
+  --checkbox-size-signup: 10px;
+  --checkbox-width-login: 9px;
+  --checkbox-height-login: 9.956px;
+}

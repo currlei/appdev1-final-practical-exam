@@ -1,8 +1,8 @@
 .page {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: min(100%, 1536px);
-  height: min(1042px, 100vh);
+  width: min(100%, var(--page-max-width));
+  height: min(var(--page-max-height), var(--viewport-height));
 }
 
 .left,
@@ -14,83 +14,83 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: var(--space-10);
   width: 100%;
-  height: 638px;
-  padding: min(20.3vh, 211px) 0 64px 11.4vw;
+  height: var(--signup-left-height);
+  padding: var(--signup-left-top-padding) 0 var(--space-64) var(--page-left-inset);
 }
 
 .signupContent {
-  width: min(100%, 25.25rem);
+  width: min(100%, var(--content-width));
 }
 
 .title {
-  width: min(100%, 25.25rem);
+  width: min(100%, var(--content-width));
   margin: 0;
-  color: #111;
-  font-size: clamp(1.75rem, 2.1vw, 2rem);
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  margin-bottom: clamp(40px, 6.5vh, 68px);
+  color: var(--color-text);
+  font-size: var(--signup-title-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-title);
+  margin-bottom: var(--signup-title-to-form);
 }
 
 .form {
-  width: min(100%, 25.25rem);
+  width: min(100%, var(--content-width));
 }
 
 .field {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  margin-bottom: clamp(16px, 2.4vh, 25px);
+  gap: var(--space-2);
+  margin-bottom: var(--field-spacing);
 }
 
 .label {
-  color: #111;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.2;
+  color: var(--color-text);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-body);
 }
 
 .input {
   width: 100%;
-  height: 33px;
-  padding: 0 9px;
-  border: 1px solid #d7d7d7;
-  border-radius: 11px;
-  background: #fff;
-  color: #111;
+  height: var(--control-height);
+  padding: 0 var(--input-padding-inline);
+  border: var(--input-border-width) solid var(--color-border);
+  border-radius: var(--input-radius);
+  background: var(--color-white);
+  color: var(--color-text);
   font: inherit;
-  font-size: 11px;
+  font-size: var(--font-size-placeholder);
   outline: none;
 }
 
 .input::placeholder {
-  color: #d1d1d1;
+  color: var(--color-placeholder-signup);
   opacity: 1;
 }
 
 .input:focus {
-  border-color: #3b5f24;
-  box-shadow: 0 0 0 2px rgb(59 95 36 / 12%);
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 var(--focus-outline-width) var(--color-focus-shadow);
 }
 
 .agreement {
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin-top: 1px;
-  color: #111;
-  font-size: 10px;
-  line-height: 1.2;
+  gap: var(--space-5);
+  margin-top: var(--space-1);
+  color: var(--color-text);
+  font-size: var(--font-size-micro);
+  line-height: var(--line-height-body);
 }
 
 .checkbox {
-  width: 10px;
-  height: 10px;
+  width: var(--checkbox-size-signup);
+  height: var(--checkbox-size-signup);
   margin: 0;
-  accent-color: #3b5f24;
+  accent-color: var(--color-brand);
 }
 
 .agreement a {
@@ -100,98 +100,98 @@
 
 .submit {
   width: 100%;
-  height: 33px;
-  margin-top: clamp(20px, 3.1vh, 32px);
+  height: var(--control-height);
+  margin-top: var(--signup-submit-spacing);
   border: 0;
-  border-radius: 10px;
-  background: #3b5f24;
-  color: #fff;
+  border-radius: var(--button-radius);
+  background: var(--color-brand);
+  color: var(--color-white);
   font: inherit;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-bold);
   cursor: pointer;
 }
 
 .submit:hover {
-  background: #304e1d;
+  background: var(--color-brand-hover);
 }
 
 .submit:focus-visible {
-  outline: 2px solid #203914;
-  outline-offset: 2px;
+  outline: var(--focus-outline-width) solid var(--color-focus);
+  outline-offset: var(--outline-offset);
 }
 
 .socialSection {
-  width: min(100%, 25.25rem);
+  width: min(100%, var(--content-width));
 }
 
 .divider {
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin-top: clamp(24px, 5.2vh, 54px);
-  color: #111;
+  gap: var(--space-5);
+  margin-top: var(--signup-divider-spacing);
+  color: var(--color-text);
 }
 
 .divider > span:first-child,
 .divider > span:last-child {
-  height: 1px;
+  height: var(--signup-divider-line-height);
   flex: 1;
-  background: #ededed;
+  background: var(--color-divider-signup);
 }
 
 .dividerText {
-  font-size: 10px;
-  line-height: 1;
+  font-size: var(--font-size-micro);
+  line-height: var(--line-height-single);
 }
 
 .socialButtons {
   display: flex;
-  gap: 23px;
-  margin-top: clamp(32px, 6.1vh, 64px);
+  gap: var(--space-23);
+  margin-top: var(--signup-social-spacing);
 }
 
 .socialButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  width: 50%;
-  height: 33px;
-  padding: 0 8px;
-  border: 1px solid #d7d7d7;
-  border-radius: 11px;
-  background: #fff;
-  color: #111;
+  gap: var(--social-button-gap);
+  width: var(--social-button-width);
+  height: var(--control-height);
+  padding: 0 var(--social-button-padding-inline);
+  border: var(--input-border-width) solid var(--color-border);
+  border-radius: var(--input-radius);
+  background: var(--color-white);
+  color: var(--color-text);
   font: inherit;
-  font-size: 12px;
+  font-size: var(--font-size-small);
   white-space: nowrap;
   cursor: pointer;
 }
 
 .socialButton img {
   display: block;
-  width: 22px;
-  height: 22px;
+  width: var(--provider-icon-size);
+  height: var(--provider-icon-size);
   object-fit: contain;
 }
 
 .socialButton:focus-visible {
-  outline: 2px solid #3b5f24;
-  outline-offset: 2px;
+  outline: var(--focus-outline-width) solid var(--color-brand);
+  outline-offset: var(--outline-offset);
 }
 
 .signInPrompt {
-  margin: clamp(16px, 2.3vh, 24px) 0 0;
-  color: #111;
-  font-size: 14px;
-  line-height: 1.2;
+  margin: var(--signup-footer-spacing) 0 0;
+  color: var(--color-text);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
   text-align: center;
 }
 
 .signInPrompt a {
-  margin-left: 4px;
-  color: #0645ff;
+  margin-left: var(--space-4);
+  color: var(--color-action-signup);
   text-decoration: none;
 }
 
@@ -204,7 +204,7 @@
 
 .image {
   display: block;
-  width: min(100%, 828px);
-  max-height: 100vh;
+  width: min(100%, var(--signup-image-width));
+  max-height: var(--viewport-height);
   object-fit: contain;
 }
