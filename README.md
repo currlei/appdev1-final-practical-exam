@@ -1,16 +1,9 @@
-# React + Vite
+# Final Examination Reflection
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+For my final examination, I made Sign Up and Login pages based on a Figma design. My first challenge was installing the npm packages. It took around 10 minutes, so I had to wait and be patient kahit hindi ko agad alam kung may progress pa. After that, I thought the layout would be simple, pero medyo nahirapan ako sa spacing. Kahit ilang pixels lang yung difference, iba na agad ang itsura compared sa design. I had to keep checking the reference and adjusting my CSS until the form and the rest of the page looked closer.
 
-Currently, two official plugins are available:
+Another challenge was keeping my files organized while working on both pages. Noong una, mali ang naging file structure ko at hindi ko agad na-separate ang Sign Up at Login files, kahit mas maayos kung magkahiwalay ang components at CSS nila. Nung in-edit ko na yung Login page, saka ko napansin na kailangan ko silang ayusin at ihiwalay. Nagpatuloy muna ako sa paggawa, then inayos ko rin ang folders at files para mas madaling hanapin at baguhin ang bawat page. I also had to be careful when I copied the Sign Up page to make the Login page, because some parts were shared but others needed to change. I learned to reuse the same structure and styles where it made sense, then update the title, fields, password link, checkbox text, and button for Login. Moving reusable values into `root.css` also helped me keep the colors, spacing, and other design choices consistent.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+When I added Tailwind CSS and the shadcn-style `Input` component, I was a little worried that changing the inputs might affect the design. I kept the CSS module classes on the inputs so they would keep the same size, border, and placeholder style. I built both pages afterward to check that they still worked.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Natutunan ko sa activity na to na kailangan din maging patient sa pag-aayos ng details, especially spacing, and organize the files properly. I made mistakes and had to go back to fix things, but that helped me understand the project better. This is also the first activity where I did not panic while using Git commands, hehe. Mas naging confident ako mag-commit at mag-check ng changes habang ginagawa yung project. Next time, I'll check my layout more often while building and keep my folders organized from the start para less hassle at the end.
