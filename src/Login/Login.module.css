@@ -17,7 +17,7 @@
   gap: 10px;
   width: 100%;
   height: 583px;
-  padding: min(20.3vh, 211px) 0 64px 11.4vw;
+  padding: min(16.1vh, 168px) 0 64px 11.4vw;
 }
 
 .loginContent {
@@ -40,7 +40,7 @@
   width: 372px;
   max-width: 100%;
   height: 26.55px;
-  margin: 0 0 clamp(20px, 3.85vh, 40px);
+  margin: 0 0 clamp(44px, 5.85vh, 61px);
   color: #000;
   font-family: Poppins, sans-serif;
   font-size: 16px;
@@ -170,12 +170,17 @@
 }
 
 .submit {
-  width: 100%;
+  display: flex;
+  width: 404px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 33px;
-  margin-top: clamp(20px, 3.1vh, 32px);
+  margin-top: clamp(16px, 2.1vh, 22px);
   border: 0;
   border-radius: 10px;
-  background: #3b5f24;
+  background: #3a5b22;
   color: #fff;
   font: inherit;
   font-size: 14px;
@@ -200,15 +205,17 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-top: clamp(24px, 5.2vh, 54px);
+  width: 400px;
+  max-width: 100%;
+  margin-top: clamp(20px, 3.1vh, 32px);
   color: #111;
 }
 
 .divider > span:first-child,
 .divider > span:last-child {
-  height: 1px;
+  height: 2px;
   flex: 1;
-  background: #ededed;
+  background: #f5f5f5;
 }
 
 .dividerText {
@@ -219,7 +226,7 @@
 .socialButtons {
   display: flex;
   gap: 23px;
-  margin-top: clamp(32px, 6.1vh, 64px);
+  margin-top: clamp(52px, 8.25vh, 86px);
 }
 
 .socialButton {
@@ -253,16 +260,26 @@
 }
 
 .signInPrompt {
-  margin: clamp(16px, 2.3vh, 24px) 0 0;
-  color: #111;
+  width: 229px;
+  height: 23.231px;
+  margin: clamp(20px, 2.7vh, 28px) auto 0;
+  color: #000;
+  font-family: Poppins, sans-serif;
   font-size: 14px;
-  line-height: 1.2;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   text-align: center;
 }
 
 .signInPrompt a {
   margin-left: 4px;
-  color: #0645ff;
+  color: #0f3dde;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   text-decoration: none;
 }
 

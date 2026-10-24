@@ -45,7 +45,7 @@ function Login() {
               <span>Sign in with Apple</span>
             </button>
           </div>
-          <p className={styles.signInPrompt}>Have an account? <a href="#signin">Sign In</a></p>
+          <p className={styles.signInPrompt}>Don’t have an account? <a href="#signup">Sign Up</a></p>
         </div>
       </section>
       <section className={styles.right} aria-label="Sign up artwork">
