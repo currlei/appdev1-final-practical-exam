@@ -11,7 +11,20 @@
 }
 
 .left {
-  /* Reserved for the sign up form. */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20.3vh 0 2rem 11.4vw;
+}
+
+.title {
+  width: min(100%, 25.25rem);
+  margin: 0;
+  color: #111;
+  font-size: clamp(1.75rem, 2.1vw, 2rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .right {
@@ -28,20 +41,4 @@
   object-fit: contain;
 }
 
-@media (max-width: 700px) {
-  .page {
-    grid-template-columns: 1fr;
-  }
 
-  .left {
-    display: none;
-  }
-
-  .right {
-    min-height: 100vh;
-  }
-
-  .image {
-    max-height: 100vh;
-  }
-}

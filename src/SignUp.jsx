@@ -4,7 +4,9 @@ import blossomImage from './assets/blossom-flower.svg'
 function SignUp() {
   return (
     <main className={styles.page}>
-      <section className={styles.left} aria-label="Sign up form area" />
+      <section className={styles.left} aria-label="Sign up form area">
+        <h1 className={styles.title}>Get Started Now</h1>
+      </section>
       <section className={styles.right} aria-label="Sign up artwork">
         <img className={styles.image} src={blossomImage} alt="Blossom flower" />
       </section>
