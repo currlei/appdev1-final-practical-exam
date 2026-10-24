@@ -6,28 +6,27 @@ import appleLogo from '../assets/icons-apple-logo.svg'
 function Login() {
   return (
     <main className={styles.page}>
-      <section className={styles.left} aria-label="Sign up form area">
-        <div className={styles.signupContent}>
+      <section className={styles.left} aria-label="Login form area">
+        <div className={styles.loginContent}>
           <h1 className={styles.title}>Welcome back!</h1>
           <p className={styles.subtitle}>Enter your Credentials to access your account</p>
           <form className={styles.form}>
-            <div className={styles.field}>
-              <label className={styles.label} htmlFor="name">Name</label>
-              <input className={styles.input} id="name" name="name" type="text" placeholder="Enter your name" />
-            </div>
             <div className={styles.field}>
               <label className={styles.label} htmlFor="email">Email address</label>
               <input className={styles.input} id="email" name="email" type="email" placeholder="Enter your email" />
             </div>
             <div className={styles.field}>
-              <label className={styles.label} htmlFor="password">Password</label>
-              <input className={styles.input} id="password" name="password" type="password" placeholder="Name" />
+              <div className={styles.passwordLabelRow}>
+                <label className={styles.label} htmlFor="password">Password</label>
+                <a className={styles.forgotPassword} href="#forgot-password">forgot password?</a>
+              </div>
+              <input className={styles.input} id="password" name="password" type="password" placeholder="Enter your password" />
             </div>
             <label className={styles.agreement}>
-              <input className={styles.checkbox} type="checkbox" name="agreement" />
-              <span>I agree to the <a href="#terms">terms &amp; policy</a></span>
+              <input className={styles.checkbox} type="checkbox" name="remember" />
+              <span>Remember for 30 days</span>
             </label>
-            <button className={styles.submit} type="submit">Signup</button>
+            <button className={styles.submit} type="submit">Login</button>
           </form>
         </div>
         <div className={styles.socialSection}>
