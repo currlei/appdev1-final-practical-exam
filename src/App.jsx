@@ -1,4 +1,4 @@
-import SignUp from './SignUp.jsx'
+import SignUp from './Signup/SignUp.jsx'
 
 function App() {
   return <SignUp />

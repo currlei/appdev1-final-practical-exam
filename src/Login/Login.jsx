@@ -1,9 +1,9 @@
-import styles from './SignUp.module.css'
-import blossomImage from './assets/blossom-flower.svg'
-import googleLogo from './assets/icons-google-logo.svg'
-import appleLogo from './assets/icons-apple-logo.svg'
+import styles from './Login.module.css'
+import blossomImage from '../assets/blossom-flower.svg'
+import googleLogo from '../assets/icons-google-logo.svg'
+import appleLogo from '../assets/icons-apple-logo.svg'
 
-function SignUp() {
+function Login() {
   return (
     <main className={styles.page}>
       <section className={styles.left} aria-label="Sign up form area">
@@ -55,4 +55,4 @@ function SignUp() {
   )
 }
 
-export default SignUp
+export default Login
